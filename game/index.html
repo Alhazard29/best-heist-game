@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Velvet Vault — a top-down heist game</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<style>
+  html, body { margin: 0; padding: 0; background: #0a0c11; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #wrap { width: 960px; max-width: 100vw; }
+  canvas { display: block; width: 100%; height: auto; background: #101219;
+    image-rendering: pixelated; }
+  #help { color: #9aa3b5; font: 13px/1.5 sans-serif; text-align: center; padding: 8px; }
+  #help b { color: #e8e4d8; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="600"></canvas>
+  <div id="help"><b>WASD / arrows</b> move &nbsp;·&nbsp; <b>Shift</b> sneak &nbsp;·&nbsp; <b>E</b> grab / pick locks &nbsp;·&nbsp; <b>1</b> smoke &nbsp;·&nbsp; <b>2</b> EMP ($150) &nbsp;·&nbsp; <b>3</b> lockpick &nbsp;·&nbsp; <b>click</b> throw a coin &nbsp;·&nbsp; <b>M</b> mute &nbsp;·&nbsp; <b>R</b> restart</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
